@@ -1,18 +1,15 @@
 const express = require ("express")
 const fs = require ('fs')
-// const indexRoute = require ("./routes/index.js")
 
 const web = express()
 
 const PORT = 8000
 
-// web.use("/index", indexRoute)
-
 web.set("view engine", "ejs")
 web.set("views", "views")
 
 web.get("/", (req,res)=>{
-    res.status(200).render("index")
+    res.status(200).render("index")  
 })
 
 web.get("/index", (req,res)=>{
