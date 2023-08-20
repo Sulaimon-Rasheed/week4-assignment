@@ -1,0 +1,14 @@
+[
+  {
+    "username": "sulaimon",
+    "password": "sulaimon24",
+    "api_key": "sulaimon_sulaimon24",
+    "user_type": "admin"
+  },
+  {
+    "username": "lawal",
+    "password": "lawal24",
+    "api_key": "lawal_lawal24",
+    "user_type": "user"
+  }
+]

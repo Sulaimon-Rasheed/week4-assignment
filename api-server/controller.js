@@ -80,7 +80,7 @@ const deleteItem = (req, res)=>{
 
     const foundIndex = items.findIndex(item=> item.id == parseInt(id))
     if(foundIndex== -1){
-        res.status(404).send(`item with index ${id} not found`)
+        res.status(404).send(`item with id ${id} not found`)
         return
     }else{items.splice(foundIndex, 1)}
     
@@ -89,7 +89,7 @@ const deleteItem = (req, res)=>{
             res.status(500).send("internal server error")
             return
         }
-        res.status(200).send(`item at id: ${id} successfully deleted`)
+        res.status(200).send(`item with id: ${id} successfully deleted`)
     } )
 }
 
